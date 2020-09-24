@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+*.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.calc-screen1::-webkit-scrollbar,
+.calc-screen2::-webkit-scrollbar {
+  display: none;
+}
+
+.calc-box-lv-1 {
+  width: 429px;
+  height: 549px;
+  background-color: #585758;
+  border-radius: 15px;
+}
+
+/* calc screen */
+
+.calc-screen {
+  width: 414px;
+  height: 126px;
+  border-radius: 15px;
+  margin: 7.5px auto;
+  color: #000;
+}
+.calc-screen1,
+.calc-screen2 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  overflow: scroll;
+}
+
+.calc-screen1 {
+  border-radius: 15px 15px 0 0;
+}
+.calc-screen2 {
+  border-radius: 0 0 15px 15px;
+}
+/* empty-space-bw-screen-key */
+
+.empty-space-bw-screen-key {
+  width: 429px;
+  height: 32.5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.empty-space-bw-screen-key p {
+  cursor: pointer;
+}
+
+/* calc keyboard */
+
+.calc-keyboard {
+  width: 414px;
+  height: 360px;
+  border-radius: 15px;
+  margin: 7.5px auto;
+  background-color: white;
+  bottom: 7.5px;
+  box-shadow: 0.5px 0.5px 4px black;
+  display: flex;
+}
+
+.keyboard-numbers-holder {
+  width: 70%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.keyboard-symbols {
+  width: 30%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.symbols-in-keyboard-numbers-holder {
+  width: 100%;
+  height: 20%;
+  border-radius: 15px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.numbers-in-keyboard-numbers-holder {
+  width: 100%;
+  height: 80%;
+  border-radius: 0 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}

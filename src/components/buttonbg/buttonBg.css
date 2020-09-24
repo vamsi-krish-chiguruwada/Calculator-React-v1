@@ -1,0 +1,16 @@
+.num-buttonBg {
+  width: 90%;
+  height: 60px;
+  margin: 0px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #585758;
+  cursor: pointer;
+}
+.num-buttonBg p {
+  margin-top: 13px;
+  color: white;
+}
+.num-buttonBg:hover {
+  background-color: #000000;
+}
